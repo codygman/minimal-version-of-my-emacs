@@ -11,4 +11,4 @@ cd /tmp/minimal-version-of-my-emacs/ && emacs -Q --load /tmp/minimal-version-of-
 ```
 
 Current issues:
-TODO cloning this from scratch and then running it
+"No snippets tables active!" - Open test.org, `M-x yas-visit-snippet-file`, get error "No snippets tables active!"
