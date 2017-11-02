@@ -11,4 +11,5 @@ cd /tmp/minimal-version-of-my-emacs/ && emacs -Q --load /tmp/minimal-version-of-
 ```
 
 Current issues:
-"No snippets tables active!" - Open test.org, `M-x yas-visit-snippet-file`, get error "No snippets tables active!"
+
+- "No snippets tables active!". Reproduce by opening test.org, `M-x yas-visit-snippet-file`, get error "No snippets tables active!"
