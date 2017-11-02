@@ -5,7 +5,7 @@ install with:
 Run with:
 
 ```
-emacs --load /tmp/minimal-version-of-my-emacs/dot-emacs.el
+emacs -Q --load /tmp/minimal-version-of-my-emacs/dot-emacs.el
 ```
 
 Current issues:
