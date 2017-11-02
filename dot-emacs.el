@@ -1,6 +1,6 @@
 ;; org
 (setq load-path (cons "/tmp/yasnippet-org-mode-repro/org-mode/lisp" load-path))
-(load-file "/tmp/yasnippet-orgmode-emacs-repro/yasnippet.el")
+(load-file "/tmp/minimal-version-of-my-emacs/yasnippet.el")
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((sh . t)
@@ -10,12 +10,12 @@
 
 ;; yas
 (require 'yasnippet)
-(setq yas-snippet-dirs '("/tmp/yasnippet-orgmode-emacs-repro/snippets/"))
-(yas-reload-all)
+(setq yas-snippet-dirs '("/tmp/minimal-version-of-my-emacs/snippets/"))
+;; (yas-reload-all)
 (yas-global-mode)
 
 ;; evil
-(add-to-list 'load-path "/tmp/yasnippet-orgmode-emacs-repro/evil")
+(add-to-list 'load-path "/tmp/minimal-version-of-my-emacs/evil")
 (require 'evil)
 (evil-mode 1)
 
