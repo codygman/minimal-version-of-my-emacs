@@ -3,7 +3,7 @@
 (load-file "/tmp/minimal-version-of-my-emacs/yasnippet.el")
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((sh . t)
+ '((shell . t)
    (emacs-lisp . nil)
    ))
 (setq org-confirm-babel-evaluate nil)
