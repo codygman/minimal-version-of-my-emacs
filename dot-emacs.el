@@ -11,10 +11,10 @@
 ;; yas
 (require 'yasnippet)
 (setq yas-snippet-dirs '("/tmp/minimal-version-of-my-emacs/snippets/"))
-(add-hook 'org-mode-hook 'yas-minor-mode)
+(yas-load-directory "/tmp/minimal-version-of-my-emacs/snippets/")
+(yas-reload-all)
 (defun yas/org-very-safe-expand ()
   (let ((yas/fallback-behavior 'return-nil)) (yas/expand)))
-
 (add-hook 'org-mode-hook
           (lambda ()
             ;; yasnippet (using the new org-cycle hooks)
@@ -22,7 +22,6 @@
             (setq yas/trigger-key [tab])
             (add-to-list 'org-tab-first-hook 'yas/org-very-safe-expand)
             (define-key yas/keymap [tab] 'yas-next-field)))
-
 
 ;; evil
 (add-to-list 'load-path "/tmp/minimal-version-of-my-emacs/evil")
