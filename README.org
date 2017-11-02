@@ -1,14 +1,14 @@
 install with:
 
-```
+#+BEGIN_SRC sh
 git clone git@github.com:codygman/minimal-version-of-my-emacs.git /tmp/minimal-version-of-my-emacs/
-```
+#+END_SRC
 
 Run with:
 
-```
+#+BEGIN_SRC sh
 cd /tmp/minimal-version-of-my-emacs/ && emacs -Q --load /tmp/minimal-version-of-my-emacs/dot-emacs.el
-```
+#+END_SRC
 
 Current issues:
 - [X] "No snippets tables active!". Reproduce by opening test.org, `M-x yas-visit-snippet-file`, get error "No snippets tables active!"
