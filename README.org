@@ -11,7 +11,8 @@ cd /tmp/minimal-version-of-my-emacs/ && emacs -Q --load /tmp/minimal-version-of-
 ```
 
 Current issues:
-- [ ] "No snippets tables active!". Reproduce by opening test.org, `M-x yas-visit-snippet-file`, get error "No snippets tables active!"
+- [X] "No snippets tables active!". Reproduce by opening test.org, `M-x yas-visit-snippet-file`, get error "No snippets tables active!"
 
 Ideas:
 - [ ] Go to end of results after tabbing out of source block
+      Can do this by getting length of output and moving cursor 1 past it, or 2(3?) past it if a drawer is used
