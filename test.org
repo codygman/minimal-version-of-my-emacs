@@ -1,0 +1,37 @@
+#+BEGIN_SRC sh
+ls /
+#+END_SRC
+
+#+RESULTS:
+| bin            |
+| boot           |
+| cdrom          |
+| core           |
+| dead.letter    |
+| dev            |
+| etc            |
+| home           |
+| initrd.img     |
+| initrd.img.old |
+| lib            |
+| lib32          |
+| lib64          |
+| lost+found     |
+| media          |
+| mnt            |
+| nix            |
+| opt            |
+| proc           |
+| root           |
+| run            |
+| sbin           |
+| snap           |
+| srv            |
+| sys            |
+| tmp            |
+| usr            |
+| var            |
+| vmlinuz        |
+| vmlinuz.old    |
+
+
