@@ -3282,7 +3282,7 @@ Also create some protection overlays"
   (when snippet
     (setf (yas--snippet-force-exit snippet) t)
     (goto-char (if (yas--snippet-exit snippet)
-                   (progn (org-ctrl-c-ctrl-c) (yas--exit-marker (yas--snippet-exit snippet)))
+                   (progn (progn (org-ctrl-c-ctrl-c) (yas--exit-marker (yas--snippet-exit snippet))) (goto-char (point-max)))
                  (overlay-end (yas--snippet-control-overlay snippet))           
                  ))))
 
