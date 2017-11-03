@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: find
+# key: find
+# --
+#+BEGIN_SRC sh
+find -iname $1
+#+END_SRC
+$0

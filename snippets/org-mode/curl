@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: curl
+# key: curl
+# --
+#+BEGIN_SRC sh
+curl $1
+#+END_SRC
+$0
